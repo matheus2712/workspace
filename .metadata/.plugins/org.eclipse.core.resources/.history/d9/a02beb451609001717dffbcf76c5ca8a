@@ -1,0 +1,40 @@
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		int opc;
+		ListaDeNomes l1 = new ListaDeNomes(4); 
+		do{
+		 opc = Integer.parseInt(JOptionPane.showInputDialog(
+				"1 - Adiciona nome \n 2 - Remove nome \n 3 - Recupera nome \n 4 - Mostrar \n 5 - Sair"));
+
+		switch (opc) {
+		case 1:
+			String e = JOptionPane.showInputDialog("Digite um nome: ");
+			l1.adiciona(e);
+			break;
+
+		case 2:
+
+			break;
+		case 3:
+
+			break;
+		case 4:
+			
+			break;
+
+		case 5:
+			System.exit(opc);
+			break;
+
+		default:
+			break;
+		
+		}
+		}while(opc != 5);
+	}
+	
+	
+}
